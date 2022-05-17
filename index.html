@@ -56,7 +56,7 @@
         <section class="url-shortener">
           <div class="container">
             <h2 class="visually-hidden">URL shortener</h2>
-            <form class="url-shortener__form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="url-shortener__form js-url-shortener-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="url-shortener__input-wrapper">
                 <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..."
                   aria-label="URL input" required>
@@ -64,6 +64,28 @@
               </div>
               <button class="url-shortener__submit button button--rectangle-big" type="submit">Shorten It!</button>
             </form>
+
+            <div class="url-shortener__results">
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://www.frontendmentor.io</div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/k4lKyk</a>
+                <button class="button button--rectangle button--small js-copy-short-link-button change-copy-button" type="button">Copy</button>
+              </div>
+
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://twitter.com/frontendmentor</div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gxOXp9</a>
+                <button class="button button--rectangle button--small js-copy-short-link-button change-copy-button" type="button">Copy</button>
+              </div>
+
+              <div class="url-shortener__result">
+                <div class="url-shortener__original-link">https://www.linkedin.com/company/frontend-mentor</div>
+                <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gob3X9</a>
+                <button class="button button--rectangle button--small js-copy-short-link-button change-copy-button" type="button">Copy</button>
+              </div>
+              </div>
+
+            </div>
           </div>
         </section>
       </div>
@@ -71,6 +93,8 @@
 
   </main>
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
