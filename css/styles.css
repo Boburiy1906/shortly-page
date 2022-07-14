@@ -132,7 +132,7 @@ body {
   padding: 10px 20px 7px;
   font-size: 15px;
   line-height: 22.5px;
- }
+}
 
 .button--big {
   padding: 14px 40px 12px;
@@ -355,7 +355,7 @@ body {
   font-weight: 500;
 }
 
-.url-shortener__results--open{
+.url-shortener__results--open {
   display: block;
 }
 
@@ -385,15 +385,99 @@ body {
   color: var(--accent-color);
 }
 
-.change-copy-button{
+.change-copy-button {
   min-width: 103px;
 }
 
-.change-copy-button--copied{
+.change-copy-button--copied {
   background-color: #3a3054;
 }
 
 
+/* INDEX-FEATURES */
+.index-features {
+  background-color: var(--light-bg);
+  padding-bottom: 120px;
+}
+
+.index-features__top {
+  max-width: 540px;
+  margin-bottom: 56px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-features__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: var(--heading-color);
+}
+
+.index-features__top-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+}
+
+.index-features__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.index-features__item {
+  max-width: 350px;
+
+}
+
+.index-features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.index-feature {
+  position: relative;
+  padding: 77px 32px 41px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.index-feature__img-wrapper {
+  position: absolute;
+  left: 32px;
+  top: -44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #3a3054;
+}
+
+.index-feature__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--text-color-dark);
+}
+
+.index-feature__info {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: var(--text-color);
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
