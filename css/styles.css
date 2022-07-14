@@ -48,6 +48,8 @@ html {
 a {
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease;
 }
 
 img {
@@ -77,6 +79,12 @@ body {
   background-color: #fff;
   color: var(--text-color);
 
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 /* VISUALLY-HIDDEN */
@@ -197,9 +205,6 @@ body {
 
 .sitenav__list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .sitenav__item:not(:last-child) {
@@ -431,9 +436,6 @@ body {
   z-index: 1;
   display: flex;
   align-items: flex-start;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .index-features__list::before {
@@ -505,7 +507,7 @@ body {
 
 
 /* SITE-CTA */
-.CTA {
+.cta {
   padding: 57px 0;
   background: url(../img/cta-bg.svg);
   background-repeat: no-repeat;
@@ -514,11 +516,11 @@ body {
 }
 
 .cta__container {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-color: var(--dark-bg-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--dark-bg-text);
 }
 
 .cta__title {
@@ -532,7 +534,78 @@ color: var(--dark-bg-text);
 }
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
+/* SITE-FOOTER */
+
+.site-footer {
+  padding: 72px 0;
+  background-color: var(--dark-bg);
+}
+
+.site-footer__container {
+  display: flex;
+
+}
+
+.site-footer__menus {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-footer__menu {
+margin-right: 95px;
+}
+
+.site-footer__menu-title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: var(--dark-bg-text)
+}
+
+.site-footer__menu-list {
+
+}
+
+.site-menu__menu-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.site-footer__menu-link {
+  color:var(--dark-bg-text)
+}
+
+.site-footer__menu-link:hover{
+  color: var(--accent-color-hover);
+  transition: ;
+}
+
+.site-footer__socials {}
+
+.socials {}
+
+.socials__list {
+  display: flex;
+}
+
+.socials__item:not(:last-child) {
+margin-right: 24px;
+}
+
+.socials__link {}
+
+
+.socials__icon:hover path {
+  fill: var(--accent-color);
+}
+
+.social__icon path{
+  transition: 0.3s ease;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
